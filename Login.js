@@ -58,7 +58,7 @@ export default function InicioSesion({navigation}){
             <input onChange={(e) => setusuario(e.nativeEvent.target.value)} type={Text}></input>
             <br></br>
             <h4>Contraseña</h4>
-            <input onChange={(e) => setpassword(e.nativeEvent.target.value)} type={Text}></input>
+            <input onChange={(e) => setpassword(e.nativeEvent.target.value)} type='password'></input>
             <br></br>
             <Button color = "#F79825" title="Registrar" onPress={() => registrar()}></Button>
             <br></br>
