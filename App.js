@@ -10,6 +10,8 @@ import Login from "./Login";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
+import Localizacion from './Localizacion';
+import Mapa from './Mapa';
 
 function HomeScreen() {
   return (
@@ -74,6 +76,8 @@ export default function App() {
           <Tab.Screen name="Home" component={HomeScreen} />
           <Tab.Screen name="Users"component={UserStack} options={{ headerShown: false }}/>
           <Tab.Screen name="Aplicación" component={UserStack} />
+          <Tab.Screen name="Localizacion" component={Localizacion} />
+          <Tab.Screen name="mapa" component={Mapa} />
           
           <Tab.Screen name="Settings" component={SettingsScreen} />
           <Tab.Screen name="Subir" component={Subir} />
