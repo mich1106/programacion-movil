@@ -1,20 +1,11 @@
 import * as React from 'react';
-import MapView, {Marker} from 'react-native-maps';
+import MapView from 'react-native-maps';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 
-export default function Mapa() {
+export default function App() {
   return (
     <View style={styles.container}>
-      <MapView style={styles.map} >
-      <Marker
-            coordinate={{
-            latitude: 23.752388,
-            longitude: -99.142277
-            }}
-            title="El Estarbocks"
-            description="Esto es el Estarbocks"
-/>
-</MapView>
+      <MapView style={styles.map} />
     </View>
   );
 }

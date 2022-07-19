@@ -12,6 +12,7 @@ import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import Localizacion from './Localizacion';
 import Mapa from './Mapa';
+import Giro from './Giro';
 
 function HomeScreen() {
   return (
@@ -73,16 +74,14 @@ export default function App() {
       <NavigationContainer>
         <Tab.Navigator>
           
-          <Tab.Screen name="Home" component={HomeScreen} />
+          
           <Tab.Screen name="Users"component={UserStack} options={{ headerShown: false }}/>
-          <Tab.Screen name="Aplicación" component={UserStack} />
-          <Tab.Screen name="Localizacion" component={Localizacion} />
-          <Tab.Screen name="mapa" component={Mapa} />
           
-          <Tab.Screen name="Settings" component={SettingsScreen} />
-          <Tab.Screen name="Subir" component={Subir} />
-           <Tab.Screen name="Subir Imagen" component={Subir} />
+         
+         
+          <Tab.Screen name="Giro" component={Giro} />
           
+         
           
         </Tab.Navigator>
       </NavigationContainer>
@@ -91,12 +90,20 @@ export default function App() {
 }
 /*
           <Tab.Screen name="Home" component={HomeScreen} />
+          
           <Tab.Screen name="Settings" component={SettingsScreen} />
           <Tab.Screen name="Subir" component={Subir} />
            <Tab.Screen name="Subir Imagen" component={Subir} />
+            <Tab.Screen name="Settings" component={SettingsScreen} />
+          <Tab.Screen name="Subir" component={Subir} />
+           <Tab.Screen name="Subir Imagen" component={Subir} />
+           Tab.Screen name="Aplicación" component={UserStack} />
+            <Tab.Screen name="Localizacion" component={Localizacion} />
+          <Tab.Screen name="mapa" component={Mapa} />
           <Tab.Screen
             name="Users"
             component={UserStack}
             options={{ headerShown: false }}
+             
           />
            */
